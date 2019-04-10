@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "OpenCV.h"
 
 @interface ObjectiveCVTests : XCTestCase
 
@@ -25,6 +26,11 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+- (void)testOpenCvVersionString {
+  NSString* versionString = [OpenCV cvVersion];
+  XCTAssertEqualObjects(versionString, @"OpenCV Version 3.4.2");
 }
 
 - (void)testPerformanceExample {
