@@ -1,0 +1,14 @@
+.DS_Store
+DerivedData
+Pods
+Podfile.lock
+*.xcworkspace/xcuserdata*
+*.cer
+*.ipa
+*.mobileprovision
+*.dSYM.zip
+output
+*.xcuserdatad
+Index/
+Build/
+
