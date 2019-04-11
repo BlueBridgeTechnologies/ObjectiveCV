@@ -8,6 +8,8 @@
 
 #import "Mat.h"
 #import "Mat+Private.h"
+#import "MatSize.h"
+#import "MatSize+Private.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #import <opencv2/imgcodecs/ios.h>
@@ -15,15 +17,31 @@
 
 @implementation Mat
 
-- (instancetype)initWithUIImage:(UIImage *)image {
+- (id) initWithMat: (cv::Mat*) mat {
   self = [super init];
+  _backingMat = mat;
+  return self;
+}
+
+- (id)initWithUIImage:(UIImage *)image {
   CGFloat cols = image.size.width;
   CGFloat rows = image.size.height;
   
   cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels (color channels + alpha)
   UIImageToMat(image, cvMat);
-  _backingMat = &cvMat;
-  return self;
+  return [self initWithMat: &cvMat];
+}
+
+- (id)initWithZerosWithSize:(MatSize *)size andType:(int)type {
+  self = [super init];
+  cv::MatSize cvSize = *(size.backingSize);
+  cv::Mat mat = cv::Mat::zeros(cvSize(), type);
+  return [self initWithMat: &mat];
+}
+
+- (MatSize*) size {
+  cv::MatSize size = _backingMat->size;
+  return [[MatSize alloc] initWithSize: &size];
 }
 
 @end

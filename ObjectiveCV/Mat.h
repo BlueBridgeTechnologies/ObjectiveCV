@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MatSize.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Mat : NSObject
 
-- (instancetype) initWithUIImage: (UIImage*) image;
+- (id) initWithUIImage: (UIImage*) image;
+
+- (id) initWithZerosWithSize: (MatSize*) size
+                               andType: (int) type;
+
+- (MatSize*) size;
 
 @end
 

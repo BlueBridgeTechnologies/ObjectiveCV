@@ -19,6 +19,8 @@
 
 @interface Mat ()
 
+- (id) initWithMat: (cv::Mat*) mat;
+
 @property (nonatomic, assign) cv::Mat *backingMat;
 
 @end

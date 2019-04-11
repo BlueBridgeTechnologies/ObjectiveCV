@@ -16,6 +16,10 @@
 		84EA4F28225DF64B00201D20 /* Mat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F26225DF64B00201D20 /* Mat.mm */; };
 		84EA4F2D225E205A00201D20 /* FeatureDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F2B225E205A00201D20 /* FeatureDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F2E225E205A00201D20 /* FeatureDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F2C225E205A00201D20 /* FeatureDetection.mm */; };
+		84EA4F31225E4D7D00201D20 /* MatSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F2F225E4D7D00201D20 /* MatSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EA4F32225E4D7D00201D20 /* MatSize.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F30225E4D7D00201D20 /* MatSize.mm */; };
+		84EA4F34225F401500201D20 /* Mat+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F2A225DFD5C00201D20 /* Mat+Private.h */; };
+		84EA4F35225F401900201D20 /* MatSize+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F33225E4D9C00201D20 /* MatSize+Private.h */; };
 		8C2DB51FD2532C3B0F9566C2 /* libPods-ObjectiveCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */; };
 		AA6F1AECCC76A4D28BCF1B6E /* libPods-ObjectiveCVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 442300169270C80C973A9E1A /* libPods-ObjectiveCVTests.a */; };
 /* End PBXBuildFile section */
@@ -49,6 +53,9 @@
 		84EA4F2A225DFD5C00201D20 /* Mat+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mat+Private.h"; sourceTree = "<group>"; };
 		84EA4F2B225E205A00201D20 /* FeatureDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureDetection.h; sourceTree = "<group>"; };
 		84EA4F2C225E205A00201D20 /* FeatureDetection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FeatureDetection.mm; sourceTree = "<group>"; };
+		84EA4F2F225E4D7D00201D20 /* MatSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatSize.h; sourceTree = "<group>"; };
+		84EA4F30225E4D7D00201D20 /* MatSize.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MatSize.mm; sourceTree = "<group>"; };
+		84EA4F33225E4D9C00201D20 /* MatSize+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatSize+Private.h"; sourceTree = "<group>"; };
 		B67F6E9F6D0EBD7F753354C8 /* Pods-ObjectiveCVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCVTests/Pods-ObjectiveCVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveCV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +110,9 @@
 				84EA4F25225DF64B00201D20 /* Mat.h */,
 				84EA4F2A225DFD5C00201D20 /* Mat+Private.h */,
 				84EA4F26225DF64B00201D20 /* Mat.mm */,
+				84EA4F2F225E4D7D00201D20 /* MatSize.h */,
+				84EA4F33225E4D9C00201D20 /* MatSize+Private.h */,
+				84EA4F30225E4D7D00201D20 /* MatSize.mm */,
 				84EA4F2B225E205A00201D20 /* FeatureDetection.h */,
 				84EA4F2C225E205A00201D20 /* FeatureDetection.mm */,
 				84EA4E8E225CC99900201D20 /* PrefixHeader.pch */,
@@ -147,8 +157,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA4F35225F401900201D20 /* MatSize+Private.h in Headers */,
 				84EA4F27225DF64B00201D20 /* Mat.h in Headers */,
+				84EA4F34225F401500201D20 /* Mat+Private.h in Headers */,
 				84EA4E81225CB7EF00201D20 /* ObjectiveCV.h in Headers */,
+				84EA4F31225E4D7D00201D20 /* MatSize.h in Headers */,
 				84EA4E8C225CC7FA00201D20 /* OpenCV.h in Headers */,
 				84EA4F2D225E205A00201D20 /* FeatureDetection.h in Headers */,
 			);
@@ -301,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EA4F2E225E205A00201D20 /* FeatureDetection.mm in Sources */,
+				84EA4F32225E4D7D00201D20 /* MatSize.mm in Sources */,
 				84EA4F28225DF64B00201D20 /* Mat.mm in Sources */,
 				84EA4E8D225CC7FA00201D20 /* OpenCV.mm in Sources */,
 			);
