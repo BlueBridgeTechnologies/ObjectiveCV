@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (id) initWithUIImage: (UIImage*) image;
 
 - (id) initWithZerosWithSize: (MatSize*) size
-                               andType: (int) type;
+                     andType: (int) type;
 
 - (MatSize*) size;
 

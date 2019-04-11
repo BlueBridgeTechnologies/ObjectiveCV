@@ -24,13 +24,13 @@
   cv::cvtColor(*[src backingMat], *[dst backingMat], code);
 }
 
-+ (void) normalizeWithSrc:(Mat *)src
-                      dst:(Mat *)dst
-                    alpha:(double)alpha
-                     beta:(double)beta
-                 normType:(int)normType
-                    dtype:(int)dtype
-                     mask:(Mat *)mask {
++ (void) normalizeWithSrc: (Mat *) src
+                      dst: (Mat *) dst
+                    alpha: (double) alpha
+                     beta: (double) beta
+                 normType: (int) normType
+                    dtype: (int) dtype
+                     mask: (Mat *) mask {
   cv::normalize(*[src backingMat],
                 *[dst backingMat],
                 alpha,
@@ -39,5 +39,11 @@
                 dtype,
                 *[mask backingMat]);
 }
+  
++ (void) convertScaleAbsWithSrc: (Mat*) src
+                            dst: (Mat*) dst {
+  cv::convertScaleAbs(*[src backingMat], *[dst backingMat]);
+}
+
 
 @end

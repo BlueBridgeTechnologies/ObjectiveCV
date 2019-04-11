@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
                     dtype: (int) dtype
                      mask: (Mat*) mask;
 
++ (void) convertScaleAbsWithSrc: (Mat*) src
+                            dst: (Mat*) dst;
+
 @end
 
 NS_ASSUME_NONNULL_END
