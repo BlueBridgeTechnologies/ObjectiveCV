@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (MatSize*) size;
 
+- (bool) empty;
+
+- (int) channels;
+
 @end
 
 NS_ASSUME_NONNULL_END

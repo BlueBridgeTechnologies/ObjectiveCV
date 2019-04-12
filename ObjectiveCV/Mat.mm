@@ -23,7 +23,7 @@
   return self;
 }
 
-- (id)initWithUIImage:(UIImage *)image {
+- (id) initWithUIImage:(UIImage *)image {
   CGFloat cols = image.size.width;
   CGFloat rows = image.size.height;
   
@@ -32,7 +32,7 @@
   return [self initWithMat: &cvMat];
 }
 
-- (id)initWithZerosWithSize:(MatSize *)size andType:(int)type {
+- (id) initWithZerosWithSize:(MatSize *)size andType:(int)type {
   self = [super init];
   cv::MatSize cvSize = *(size.backingSize);
   cv::Mat mat = cv::Mat::zeros(cvSize(), type);
@@ -42,6 +42,20 @@
 - (MatSize*) size {
   cv::MatSize size = _backingMat->size;
   return [[MatSize alloc] initWithSize: &size];
+}
+
+- (bool) empty {
+  return _backingMat->empty();
+}
+
+- (int) channels {
+  return _backingMat->channels();
+}
+
+- (void) dealloc {
+  if (_backingMat) {
+    delete _backingMat;
+  }
 }
 
 @end

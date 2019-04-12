@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)cvVersion;
 
++ (int) colorBgr2Gray;
+
++ (int) cv32FC1;
+
++ (int) normMinmax;
+
 + (void) cvtColorWithSrc: (Mat*) src
                      dst: (Mat*) dst
                     code: (int) code;

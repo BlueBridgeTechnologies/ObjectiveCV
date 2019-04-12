@@ -50,7 +50,7 @@
 		84EA4E8E225CC99900201D20 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84EA4F25225DF64B00201D20 /* Mat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mat.h; sourceTree = "<group>"; };
 		84EA4F26225DF64B00201D20 /* Mat.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Mat.mm; sourceTree = "<group>"; };
-		84EA4F2A225DFD5C00201D20 /* Mat+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mat+Private.h"; sourceTree = "<group>"; };
+		84EA4F2A225DFD5C00201D20 /* Mat+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "Mat+Private.h"; sourceTree = "<group>"; };
 		84EA4F2B225E205A00201D20 /* FeatureDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureDetection.h; sourceTree = "<group>"; };
 		84EA4F2C225E205A00201D20 /* FeatureDetection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FeatureDetection.mm; sourceTree = "<group>"; };
 		84EA4F2F225E4D7D00201D20 /* MatSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatSize.h; sourceTree = "<group>"; };

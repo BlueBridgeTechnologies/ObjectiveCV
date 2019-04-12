@@ -17,4 +17,10 @@
   return self;
 }
 
+- (void) dealloc {
+  if (_backingSize) {
+    delete _backingSize;
+  }
+}
+
 @end

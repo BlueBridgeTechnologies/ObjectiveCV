@@ -21,6 +21,6 @@
 
 - (id) initWithMat: (cv::Mat*) mat;
 
-@property (nonatomic, assign) cv::Mat *backingMat;
+@property (nonatomic, readonly) cv::Mat *backingMat;
 
 @end
