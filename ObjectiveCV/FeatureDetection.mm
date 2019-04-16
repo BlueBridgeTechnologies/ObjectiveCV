@@ -7,15 +7,15 @@
 //
 
 #import "FeatureDetection.h"
-#import "Mat+Private.h"
+#import "OCVMat+Private.h"
 #ifdef __cplusplus
 #include <opencv2/imgproc/imgproc.hpp>
 #endif
 
 @implementation FeatureDetection
 
-+(void)cornerHarrisWithsrc: (Mat*) src
-                       dst: (Mat*) dst
++(void)cornerHarrisWithsrc: (OCVMat*) src
+                       dst: (OCVMat*) dst
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k {
@@ -27,16 +27,16 @@
                               boderType:0];
 }
 
-+(void)cornerHarrisWithsrc: (Mat*) src
-                       dst: (Mat*) dst
++(void)cornerHarrisWithsrc: (OCVMat*) src
+                       dst: (OCVMat*) dst
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k
                  boderType: (int) borderType {
-  cv::Mat *cvSrc = [src backingMat];
-  cv::Mat *cvDst = [dst backingMat];
-  cv::cornerHarris(*cvSrc,
-                   *cvDst,
+  cv::Mat cvSrc = *[src backingMat];
+  cv::Mat cvDst = *[dst backingMat];
+  cv::cornerHarris(cvSrc,
+                   cvDst,
                    blockSize,
                    ksize,
                    k,

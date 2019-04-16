@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MatSize : NSObject
+@interface OCVSize : NSObject
 
 @end
 

@@ -8,22 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MatSize.h"
+#import "OCVSize.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mat : NSObject
+@interface OCVMat : NSObject
 
 - (id) initWithUIImage: (UIImage*) image;
 
-- (id) initWithZerosWithSize: (MatSize*) size
+- (id) initWithZerosWithSize: (OCVSize*) size
                      andType: (int) type;
 
-- (MatSize*) size;
+- (OCVSize*) size;
 
-- (bool) empty;
+- (BOOL) empty;
 
 - (int) channels;
+
+- (size_t) total;
 
 @end
 

@@ -7,21 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Mat.h"
+#import "OCVMat.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FeatureDetection : NSObject
 
-+(void)cornerHarrisWithsrc: (Mat*) src
-                       dst: (Mat*) dst
++(void)cornerHarrisWithsrc: (OCVMat*) src
+                       dst: (OCVMat*) dst
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k
                  boderType: (int) borderType;
 
-+(void)cornerHarrisWithsrc: (Mat*) src
-                       dst: (Mat*) dst
++(void)cornerHarrisWithsrc: (OCVMat*) src
+                       dst: (OCVMat*) dst
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k;

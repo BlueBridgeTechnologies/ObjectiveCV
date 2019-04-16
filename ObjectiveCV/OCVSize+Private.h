@@ -6,21 +6,21 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#ifndef MatSize_Private_h
-#define MatSize_Private_h
+#ifndef Size_Private_h
+#define Size_Private_h
 
 
 #endif /* MatSize_Private_h */
 
-#import "Mat.h"
+#import "OCVMat.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
 
-@interface  MatSize ()
+@interface  OCVSize ()
 
-- (id) initWithSize: (cv::MatSize*) size;
+- (id) initWithSize: (cv::Size) size;
 
-@property (nonatomic, assign) cv::MatSize *backingSize;
+- (cv::Size) backingSize;
 
 @end

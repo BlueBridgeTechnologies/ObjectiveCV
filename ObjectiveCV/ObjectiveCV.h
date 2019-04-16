@@ -16,6 +16,6 @@ FOUNDATION_EXPORT const unsigned char ObjectiveCVVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ObjectiveCV/PublicHeader.h>
 #import <ObjectiveCV/OpenCV.h>
-#import <ObjectiveCV/Mat.h>
-#import <ObjectiveCV/MatSize.h>
+#import <ObjectiveCV/OCVMat.h>
+#import <ObjectiveCV/OCVSize.h>
 #import <ObjectiveCV/FeatureDetection.h>

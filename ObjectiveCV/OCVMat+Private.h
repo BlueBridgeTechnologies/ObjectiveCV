@@ -12,15 +12,15 @@
 
 #endif /* Mat_Private_h */
 
-#import "Mat.h"
+#import "OCVMat.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
 
-@interface Mat ()
+@interface OCVMat ()
 
-- (id) initWithMat: (cv::Mat*) mat;
+- (id) initWithMat: (cv::Mat) mat;
 
-@property (nonatomic, readonly) cv::Mat *backingMat;
+- (cv::Mat*) backingMat;
 
 @end
