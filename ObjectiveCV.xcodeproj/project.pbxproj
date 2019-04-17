@@ -20,6 +20,14 @@
 		84EA4F32225E4D7D00201D20 /* OCVSize.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F30225E4D7D00201D20 /* OCVSize.mm */; };
 		84EA4F34225F401500201D20 /* OCVMat+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F2A225DFD5C00201D20 /* OCVMat+Private.h */; };
 		84EA4F35225F401900201D20 /* OCVSize+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F33225E4D9C00201D20 /* OCVSize+Private.h */; };
+		84EA4F382266372E00201D20 /* Drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F362266372E00201D20 /* Drawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EA4F392266372E00201D20 /* Drawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F372266372E00201D20 /* Drawing.mm */; };
+		84EA4F3C2266393E00201D20 /* OCVPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F3A2266393E00201D20 /* OCVPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EA4F3D2266393E00201D20 /* OCVPoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F3B2266393E00201D20 /* OCVPoint.mm */; };
+		84EA4F412266396B00201D20 /* OCVScalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F3F2266396B00201D20 /* OCVScalar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EA4F422266396B00201D20 /* OCVScalar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F402266396B00201D20 /* OCVScalar.mm */; };
+		84EA4F4422663BEB00201D20 /* OCVScalar+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F432266397B00201D20 /* OCVScalar+Private.h */; };
+		84EA4F4522663BF000201D20 /* OCVPoint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F3E2266395D00201D20 /* OCVPoint+Private.h */; };
 		8C2DB51FD2532C3B0F9566C2 /* libPods-ObjectiveCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */; };
 		AA6F1AECCC76A4D28BCF1B6E /* libPods-ObjectiveCVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 442300169270C80C973A9E1A /* libPods-ObjectiveCVTests.a */; };
 /* End PBXBuildFile section */
@@ -56,6 +64,14 @@
 		84EA4F2F225E4D7D00201D20 /* OCVSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVSize.h; sourceTree = "<group>"; };
 		84EA4F30225E4D7D00201D20 /* OCVSize.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVSize.mm; sourceTree = "<group>"; };
 		84EA4F33225E4D9C00201D20 /* OCVSize+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCVSize+Private.h"; sourceTree = "<group>"; };
+		84EA4F362266372E00201D20 /* Drawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		84EA4F372266372E00201D20 /* Drawing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Drawing.mm; sourceTree = "<group>"; };
+		84EA4F3A2266393E00201D20 /* OCVPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVPoint.h; sourceTree = "<group>"; };
+		84EA4F3B2266393E00201D20 /* OCVPoint.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVPoint.mm; sourceTree = "<group>"; };
+		84EA4F3E2266395D00201D20 /* OCVPoint+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCVPoint+Private.h"; sourceTree = "<group>"; };
+		84EA4F3F2266396B00201D20 /* OCVScalar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVScalar.h; sourceTree = "<group>"; };
+		84EA4F402266396B00201D20 /* OCVScalar.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVScalar.mm; sourceTree = "<group>"; };
+		84EA4F432266397B00201D20 /* OCVScalar+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCVScalar+Private.h"; sourceTree = "<group>"; };
 		B67F6E9F6D0EBD7F753354C8 /* Pods-ObjectiveCVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCVTests/Pods-ObjectiveCVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveCV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,8 +129,16 @@
 				84EA4F2F225E4D7D00201D20 /* OCVSize.h */,
 				84EA4F33225E4D9C00201D20 /* OCVSize+Private.h */,
 				84EA4F30225E4D7D00201D20 /* OCVSize.mm */,
+				84EA4F3A2266393E00201D20 /* OCVPoint.h */,
+				84EA4F3E2266395D00201D20 /* OCVPoint+Private.h */,
+				84EA4F3B2266393E00201D20 /* OCVPoint.mm */,
+				84EA4F3F2266396B00201D20 /* OCVScalar.h */,
+				84EA4F432266397B00201D20 /* OCVScalar+Private.h */,
+				84EA4F402266396B00201D20 /* OCVScalar.mm */,
 				84EA4F2B225E205A00201D20 /* FeatureDetection.h */,
 				84EA4F2C225E205A00201D20 /* FeatureDetection.mm */,
+				84EA4F362266372E00201D20 /* Drawing.h */,
+				84EA4F372266372E00201D20 /* Drawing.mm */,
 				84EA4E8E225CC99900201D20 /* PrefixHeader.pch */,
 				84EA4E74225CB7EE00201D20 /* Info.plist */,
 			);
@@ -157,13 +181,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA4F4522663BF000201D20 /* OCVPoint+Private.h in Headers */,
 				84EA4F35225F401900201D20 /* OCVSize+Private.h in Headers */,
 				84EA4F27225DF64B00201D20 /* OCVMat.h in Headers */,
 				84EA4F34225F401500201D20 /* OCVMat+Private.h in Headers */,
+				84EA4F382266372E00201D20 /* Drawing.h in Headers */,
 				84EA4E81225CB7EF00201D20 /* ObjectiveCV.h in Headers */,
 				84EA4F31225E4D7D00201D20 /* OCVSize.h in Headers */,
+				84EA4F3C2266393E00201D20 /* OCVPoint.h in Headers */,
+				84EA4F4422663BEB00201D20 /* OCVScalar+Private.h in Headers */,
 				84EA4E8C225CC7FA00201D20 /* OpenCV.h in Headers */,
 				84EA4F2D225E205A00201D20 /* FeatureDetection.h in Headers */,
+				84EA4F412266396B00201D20 /* OCVScalar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EA4F2E225E205A00201D20 /* FeatureDetection.mm in Sources */,
+				84EA4F3D2266393E00201D20 /* OCVPoint.mm in Sources */,
+				84EA4F392266372E00201D20 /* Drawing.mm in Sources */,
 				84EA4F32225E4D7D00201D20 /* OCVSize.mm in Sources */,
+				84EA4F422266396B00201D20 /* OCVScalar.mm in Sources */,
 				84EA4F28225DF64B00201D20 /* OCVMat.mm in Sources */,
 				84EA4E8D225CC7FA00201D20 /* OpenCV.mm in Sources */,
 			);

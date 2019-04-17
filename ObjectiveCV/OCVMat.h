@@ -27,6 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (size_t) total;
 
+- (int) rows;
+
+- (int) cols;
+
+- (float) floatAtRow: (int) row col: (int) col;
+
+- (UIImage*) convertToUIImage;
+
 @end
 
 NS_ASSUME_NONNULL_END

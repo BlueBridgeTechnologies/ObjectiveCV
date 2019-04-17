@@ -65,4 +65,21 @@
   return backingMat.total();
 }
 
+- (int) rows {
+  return backingMat.rows;
+}
+
+- (int) cols {
+  return backingMat.cols;
+}
+
+- (float) floatAtRow: (int) row col: (int) col {
+  return backingMat.at<float>(row, col);
+}
+
+- (UIImage*) convertToUIImage {
+  UIImage* image = MatToUIImage(backingMat);
+  return image;
+}
+
 @end
