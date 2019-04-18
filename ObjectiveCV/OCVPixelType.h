@@ -1,19 +1,18 @@
 //
-//  OpenCV.h
+//  OCVPixelType.h
 //  ObjectiveCV
 //
-//  Created by admin on 09/04/2019.
+//  Created by admin on 18/04/2019.
 //  Copyright © 2019 admin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "OCVMat.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OpenCV : NSObject
+@interface OCVPixelType : NSObject
 
-+ (NSString *)cvVersion;
++ (int) cv32FC1;
 
 @end
 

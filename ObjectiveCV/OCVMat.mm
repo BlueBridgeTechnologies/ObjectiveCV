@@ -93,4 +93,31 @@
                 [maxLoc backingPoint]);
 }
 
++ (void) cvtColorWithSrc: (OCVMat*) src
+                     dst: (OCVMat*) dst
+                    code: (int) code {
+  cv::cvtColor(*[src backingMat], *[dst backingMat], code);
+}
+
++ (void) normalizeWithSrc: (OCVMat *) src
+                      dst: (OCVMat *) dst
+                    alpha: (double) alpha
+                     beta: (double) beta
+                 normType: (int) normType
+                    dtype: (int) dtype
+                     mask: (OCVMat *) mask {
+  cv::normalize(*[src backingMat],
+                *[dst backingMat],
+                alpha,
+                beta,
+                normType,
+                dtype,
+                *[mask backingMat]);
+}
+
++ (void) convertScaleAbsWithSrc: (OCVMat*) src
+                            dst: (OCVMat*) dst {
+  cv::convertScaleAbs(*[src backingMat], *[dst backingMat]);
+}
+
 @end

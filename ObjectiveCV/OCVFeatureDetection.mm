@@ -6,25 +6,25 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "FeatureDetection.h"
+#import "OCVFeatureDetection.h"
 #import "OCVMat+Private.h"
 #ifdef __cplusplus
 #include <opencv2/imgproc/imgproc.hpp>
 #endif
 
-@implementation FeatureDetection
+@implementation OCVFeatureDetection
 
 +(void)cornerHarrisWithsrc: (OCVMat*) src
                        dst: (OCVMat*) dst
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k {
-  [FeatureDetection cornerHarrisWithsrc: src
-                                    dst: dst
-                              blockSize: blockSize
-                                  ksize: ksize
-                                      k: k
-                              boderType: 0];
+  [OCVFeatureDetection cornerHarrisWithsrc: src
+                                       dst: dst
+                                 blockSize: blockSize
+                                     ksize: ksize
+                                         k: k
+                                 boderType: 0];
 }
 
 +(void)cornerHarrisWithsrc: (OCVMat*) src

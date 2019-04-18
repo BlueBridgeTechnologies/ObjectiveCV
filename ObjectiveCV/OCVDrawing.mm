@@ -6,7 +6,7 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "Drawing.h"
+#import "OCVDrawing.h"
 #import "OCVMat+Private.h"
 #import "OCVPoint+Private.h"
 #import "OCVScalar+Private.h"
@@ -16,13 +16,13 @@
 #endif
 
 
-@implementation Drawing
+@implementation OCVDrawing
 
 + (void) circle: (OCVMat*) img
        atCenter: (OCVPoint*) center
      withRadius: (int) radius
       withColor: (OCVScalar*) color {
-  [Drawing circle: img
+  [OCVDrawing circle: img
          atCenter: center
        withRadius: radius
         withColor: color

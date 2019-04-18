@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeatureDetection : NSObject
+@interface OCVFeatureDetection : NSObject
 
 +(void)cornerHarrisWithsrc: (OCVMat*) src
                        dst: (OCVMat*) dst

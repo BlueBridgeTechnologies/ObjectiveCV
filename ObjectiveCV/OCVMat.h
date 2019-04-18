@@ -40,6 +40,21 @@ NS_ASSUME_NONNULL_BEGIN
             minLoc: (OCVPoint*) minLoc
             maxLoc: (OCVPoint*) maxLoc;
 
++ (void) cvtColorWithSrc: (OCVMat*) src
+                     dst: (OCVMat*) dst
+                    code: (int) code;
+
++ (void) normalizeWithSrc: (OCVMat*) src
+                      dst: (OCVMat*) dst
+                    alpha: (double) alpha
+                     beta: (double) beta
+                 normType: (int) normType
+                    dtype: (int) dtype
+                     mask: (OCVMat*) mask;
+
++ (void) convertScaleAbsWithSrc: (OCVMat*) src
+                            dst: (OCVMat*) dst;
+
 @end
 
 NS_ASSUME_NONNULL_END

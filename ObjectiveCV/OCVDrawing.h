@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Drawing : NSObject
+@interface OCVDrawing : NSObject
 
 + (void) circle: (OCVMat*) img
        atCenter: (OCVPoint*) center
