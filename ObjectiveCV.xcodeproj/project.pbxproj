@@ -28,11 +28,11 @@
 		84EA4F422266396B00201D20 /* OCVScalar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F402266396B00201D20 /* OCVScalar.mm */; };
 		84EA4F4422663BEB00201D20 /* OCVScalar+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F432266397B00201D20 /* OCVScalar+Private.h */; };
 		84EA4F4522663BF000201D20 /* OCVPoint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F3E2266395D00201D20 /* OCVPoint+Private.h */; };
-		84EA4F4822689EB400201D20 /* OCVColorConversionCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4622689EB400201D20 /* OCVColorConversionCodes.h */; };
+		84EA4F4822689EB400201D20 /* OCVColorConversionCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4622689EB400201D20 /* OCVColorConversionCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F4922689EB400201D20 /* OCVColorConversionCodes.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F4722689EB400201D20 /* OCVColorConversionCodes.mm */; };
-		84EA4F4C2268A06A00201D20 /* OCVPixelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4A2268A06A00201D20 /* OCVPixelType.h */; };
+		84EA4F4C2268A06A00201D20 /* OCVPixelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4A2268A06A00201D20 /* OCVPixelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F4D2268A06A00201D20 /* OCVPixelType.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F4B2268A06A00201D20 /* OCVPixelType.mm */; };
-		84EA4F502268A2A200201D20 /* OCVNormTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4E2268A2A200201D20 /* OCVNormTypes.h */; };
+		84EA4F502268A2A200201D20 /* OCVNormTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F4E2268A2A200201D20 /* OCVNormTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F512268A2A200201D20 /* OCVNormTypes.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F4F2268A2A200201D20 /* OCVNormTypes.mm */; };
 		8C2DB51FD2532C3B0F9566C2 /* libPods-ObjectiveCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */; };
 		AA6F1AECCC76A4D28BCF1B6E /* libPods-ObjectiveCVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 442300169270C80C973A9E1A /* libPods-ObjectiveCVTests.a */; };
