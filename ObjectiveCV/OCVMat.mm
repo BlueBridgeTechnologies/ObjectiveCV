@@ -10,6 +10,7 @@
 #import "OCVMat+Private.h"
 #import "OCVSize.h"
 #import "OCVSize+Private.h"
+#import "OCVPoint+Private.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #import <opencv2/imgcodecs/ios.h>
@@ -80,6 +81,16 @@
 - (UIImage*) convertToUIImage {
   UIImage* image = MatToUIImage(backingMat);
   return image;
+}
+
++ (void) minMaxLoc: (OCVMat *) src
+            minLoc: (OCVPoint *) minLoc
+            maxLoc: (OCVPoint *) maxLoc {
+  cv::minMaxLoc(*[src backingMat],
+                NULL,
+                NULL,
+                [minLoc backingPoint],
+                [maxLoc backingPoint]);
 }
 
 @end

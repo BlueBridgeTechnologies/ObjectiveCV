@@ -19,6 +19,8 @@
 
 @interface OCVPoint ()
 
-- (cv::Point) backingPoint;
+- (id) initWithPoint: (cv::Point) point;
+
+- (cv::Point*) backingPoint;
 
 @end

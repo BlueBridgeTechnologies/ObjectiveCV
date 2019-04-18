@@ -27,8 +27,26 @@
   return self;
 }
 
-- (cv::Point) backingPoint {
-  return backingPoint;
+- (id) initWithPoint: (cv::Point) point {
+  self = [super init];
+  
+  if (self) {
+    backingPoint = point;
+  }
+  
+  return self;
+}
+
+- (cv::Point*) backingPoint {
+  return &backingPoint;
+}
+
+- (int) x {
+  return backingPoint.x;
+}
+
+- (int) y {
+  return backingPoint.y;
 }
 
 @end

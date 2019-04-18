@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id) initWithX: (int) x y: (int) y;
 
+- (int) x;
+
+- (int) y;
+
 @end
 
 NS_ASSUME_NONNULL_END

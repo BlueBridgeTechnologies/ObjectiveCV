@@ -39,7 +39,7 @@
    withLineType: (int) lineType
       withShift: (int) shift {
   cv::circle(*[img backingMat],
-         [center backingPoint],
+         *[center backingPoint],
          radius,
          [color backingScalar],
          thickness,

@@ -19,12 +19,12 @@
                  blockSize: (int) blockSize
                      ksize: (int) ksize
                          k: (double) k {
-  [FeatureDetection cornerHarrisWithsrc:src
-                                    dst:dst
-                              blockSize:blockSize
-                                  ksize:ksize
-                                      k:k
-                              boderType:0];
+  [FeatureDetection cornerHarrisWithsrc: src
+                                    dst: dst
+                              blockSize: blockSize
+                                  ksize: ksize
+                                      k: k
+                              boderType: 0];
 }
 
 +(void)cornerHarrisWithsrc: (OCVMat*) src

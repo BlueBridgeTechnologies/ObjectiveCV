@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "OCVSize.h"
+#import "OCVPoint.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,6 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (float) floatAtRow: (int) row col: (int) col;
 
 - (UIImage*) convertToUIImage;
+
++ (void) minMaxLoc: (OCVMat*) src
+            minLoc: (OCVPoint*) minLoc
+            maxLoc: (OCVPoint*) maxLoc;
 
 @end
 
