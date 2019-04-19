@@ -100,7 +100,8 @@ Pod::Spec.new do |s|
   s.public_header_files = "ObjectiveCV/PublicHeaders/*.{h}"
 
   # --- Prefix header file ------------------------------------------------------- #
-  s.prefix_header_file = "ObjectiveCV/PrefixHeader.pch"
+  #s.prefix_header_file = "ObjectiveCV/PrefixHeader.pch"
+  s.prefix_header_file = false
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -34,6 +34,7 @@
 		84EA4F842269C80600201D20 /* OCVSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F792269C80600201D20 /* OCVSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F852269C80600201D20 /* OCVPixelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F7A2269C80600201D20 /* OCVPixelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EA4F862269C80600201D20 /* OCVScalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4F7B2269C80600201D20 /* OCVScalar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EA4F882269D47E00201D20 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 84EA4E8E225CC99900201D20 /* PrefixHeader.pch */; };
 		8C2DB51FD2532C3B0F9566C2 /* libPods-ObjectiveCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB079BE1A16FEFFA56E680C /* libPods-ObjectiveCV.a */; };
 		AA6F1AECCC76A4D28BCF1B6E /* libPods-ObjectiveCVTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 442300169270C80C973A9E1A /* libPods-ObjectiveCVTests.a */; };
 /* End PBXBuildFile section */
@@ -69,10 +70,10 @@
 		84EA4F5A2269C7F800201D20 /* OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCV.mm; sourceTree = "<group>"; };
 		84EA4F5B2269C7F800201D20 /* OCVMat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVMat.mm; sourceTree = "<group>"; };
 		84EA4F5C2269C7F800201D20 /* OCVNormTypes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVNormTypes.mm; sourceTree = "<group>"; };
-		84EA4F682269C80000201D20 /* OCVPoint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVPoint+Private.h"; sourceTree = "<group>"; };
-		84EA4F692269C80000201D20 /* OCVSize+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVSize+Private.h"; sourceTree = "<group>"; };
-		84EA4F6A2269C80000201D20 /* OCVMat+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVMat+Private.h"; sourceTree = "<group>"; };
-		84EA4F6B2269C80000201D20 /* OCVScalar+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVScalar+Private.h"; sourceTree = "<group>"; };
+		84EA4F682269C80000201D20 /* OCVPoint+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "OCVPoint+Private.h"; sourceTree = "<group>"; };
+		84EA4F692269C80000201D20 /* OCVSize+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "OCVSize+Private.h"; sourceTree = "<group>"; };
+		84EA4F6A2269C80000201D20 /* OCVMat+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "OCVMat+Private.h"; sourceTree = "<group>"; };
+		84EA4F6B2269C80000201D20 /* OCVScalar+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "OCVScalar+Private.h"; sourceTree = "<group>"; };
 		84EA4F712269C80600201D20 /* OCVMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMat.h; sourceTree = "<group>"; };
 		84EA4F722269C80600201D20 /* OCVFeatureDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFeatureDetection.h; sourceTree = "<group>"; };
 		84EA4F732269C80600201D20 /* OCVColorConversionCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVColorConversionCodes.h; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA4F882269D47E00201D20 /* PrefixHeader.pch in Headers */,
 				84EA4F6C2269C80000201D20 /* OCVPoint+Private.h in Headers */,
 				84EA4F812269C80600201D20 /* OpenCV.h in Headers */,
 				84EA4F7D2269C80600201D20 /* OCVFeatureDetection.h in Headers */,

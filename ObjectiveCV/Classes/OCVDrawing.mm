@@ -6,11 +6,6 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#ifdef __cplusplus
-#include <opencv2/opencv.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#endif
-
 #import "OCVMat+Private.h"
 #import "OCVPoint+Private.h"
 #import "OCVScalar+Private.h"

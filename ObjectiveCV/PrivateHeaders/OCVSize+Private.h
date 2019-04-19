@@ -14,9 +14,11 @@
 
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
+//#include <opencv2/imgcodecs/ios.h>
 #endif
 
 #import "OCVMat.h"
+#import <Foundation/Foundation.h>
 
 @interface  OCVSize ()
 
