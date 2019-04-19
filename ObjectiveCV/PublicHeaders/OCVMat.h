@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (id) initWithZerosWithSize: (OCVSize*) size
                      andType: (int) type;
 
+- (id) initWithPixelBuffer: (CVPixelBufferRef) buffer;
+
 - (OCVSize*) size;
 
 - (BOOL) empty;
