@@ -6,7 +6,6 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "OCVPoint.h"
 #import "OCVPoint+Private.h"
 
 @interface OCVPoint () {

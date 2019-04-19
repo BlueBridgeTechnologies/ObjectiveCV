@@ -6,7 +6,6 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "OCVScalar.h"
 #import "OCVScalar+Private.h"
 
 @interface OCVScalar () {

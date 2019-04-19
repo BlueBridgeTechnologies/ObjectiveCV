@@ -6,11 +6,11 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "OpenCV.h"
-#import "OCVMat+Private.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
+
+#import "OpenCV.h"
 
 @implementation OpenCV
 

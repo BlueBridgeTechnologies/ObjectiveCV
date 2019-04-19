@@ -12,10 +12,11 @@
 
 #endif /* OCVScalar_Private_h */
 
-#import "OCVScalar.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
+
+#import "OCVScalar.h"
 
 @interface OCVScalar ()
 

@@ -6,7 +6,6 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "OCVSize.h"
 #import "OCVSize+Private.h"
 
 @interface OCVSize () {

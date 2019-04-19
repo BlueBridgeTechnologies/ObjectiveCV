@@ -12,10 +12,12 @@
 
 #endif /* OCVPoint_Private_h */
 
-#import "OCVPoint.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
+
+#import "OCVPoint.h"
+
 
 @interface OCVPoint ()
 

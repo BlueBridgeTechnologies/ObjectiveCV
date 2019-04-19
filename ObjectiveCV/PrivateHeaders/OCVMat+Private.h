@@ -13,9 +13,6 @@
 #endif /* Mat_Private_h */
 
 #import "OCVMat.h"
-#ifdef __cplusplus
-#include <opencv2/opencv.hpp>
-#endif
 
 @interface OCVMat ()
 

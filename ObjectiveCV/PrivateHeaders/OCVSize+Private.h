@@ -12,10 +12,11 @@
 
 #endif /* MatSize_Private_h */
 
-#import "OCVMat.h"
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
 #endif
+
+#import "OCVMat.h"
 
 @interface  OCVSize ()
 

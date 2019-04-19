@@ -6,11 +6,12 @@
 //  Copyright © 2019 admin. All rights reserved.
 //
 
-#import "OCVFeatureDetection.h"
-#import "OCVMat+Private.h"
 #ifdef __cplusplus
 #include <opencv2/imgproc/imgproc.hpp>
 #endif
+
+#import "OCVMat+Private.h"
+#import "OCVFeatureDetection.h"
 
 @implementation OCVFeatureDetection
 
