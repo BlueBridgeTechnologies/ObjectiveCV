@@ -36,22 +36,13 @@
 }
 
 - (id) initWithPixelBuffer: (CVPixelBufferRef) buffer {
-  size_t cols = CVPixelBufferGetWidth(buffer);
-  size_t rows = CVPixelBufferGetHeight(buffer);
-  
-  cv::Mat cvMat((int)rows, (int)cols, CV_8UC4); // 8 bits per component, 4 channels (color channels + alpha)
-  
   CVPixelBufferLockBaseAddress(buffer, 0);
   
+  size_t cols = CVPixelBufferGetWidth(buffer);
+  size_t rows = CVPixelBufferGetHeight(buffer);
   void *baseAddress = CVPixelBufferGetBaseAddress(buffer);
   
-  size_t dataSize = CVPixelBufferGetDataSize(buffer);
-  
-  size_t targetDataSize = rows * cols * 4;
-  
-  if (dataSize >= targetDataSize) {
-    std::memcpy(cvMat.data, baseAddress, targetDataSize);
-  }
+  cv::Mat cvMat((int)rows, (int)cols, CV_8UC4, baseAddress, 0); // 8 bits per component, 4 channels (color channels + alpha)
   
   CVPixelBufferUnlockBaseAddress(buffer, 0);
   
