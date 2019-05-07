@@ -19,4 +19,16 @@
   return cv::COLOR_BGR2GRAY;
 }
 
++ (int) colorBgra2Gray {
+  return cv::COLOR_BGRA2GRAY;
+}
+
++ (int) colorRgb2Gray {
+  return cv::COLOR_RGB2GRAY;
+}
+
++ (int) colorRgba2Gray {
+  return cv::COLOR_RGBA2GRAY;
+}
+
 @end

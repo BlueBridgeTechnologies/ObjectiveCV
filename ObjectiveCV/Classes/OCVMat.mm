@@ -40,9 +40,10 @@
   
   size_t cols = CVPixelBufferGetWidth(buffer);
   size_t rows = CVPixelBufferGetHeight(buffer);
+  size_t bytesPerRow = CVPixelBufferGetBytesPerRow(buffer);
   void *baseAddress = CVPixelBufferGetBaseAddress(buffer);
-  
-  cv::Mat cvMat((int)rows, (int)cols, CV_8UC4, baseAddress, 0); // 8 bits per component, 4 channels (color channels + alpha)
+
+  cv::Mat cvMat((int)rows, (int)cols, CV_8UC4, baseAddress, bytesPerRow); // 8 bits per component, 4 channels (color channels + alpha)
   
   CVPixelBufferUnlockBaseAddress(buffer, 0);
   

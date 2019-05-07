@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (int) colorBgr2Gray;
 
++ (int) colorBgra2Gray;
+
++ (int) colorRgb2Gray;
+
++ (int) colorRgba2Gray;
+
 @end
 
 NS_ASSUME_NONNULL_END
