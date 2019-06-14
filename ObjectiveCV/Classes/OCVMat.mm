@@ -9,6 +9,7 @@
 #import "OCVMat+Private.h"
 #import "OCVSize+Private.h"
 #import "OCVPoint+Private.h"
+#import "OCVRect+Private.h"
 
 @interface OCVMat () {
 
@@ -90,6 +91,12 @@
 - (UIImage*) convertToUIImage {
   UIImage* image = MatToUIImage(backingMat);
   return image;
+}
+
+- (OCVMat*) croppedWithRect: (OCVRect*) rect {
+  cv::Rect backingRect = *rect.backingRect;
+  cv::Mat croppedMat = backingMat(backingRect);
+  return [[OCVMat alloc] initWithMat:croppedMat];
 }
 
 + (void) minMaxLoc: (OCVMat *) src

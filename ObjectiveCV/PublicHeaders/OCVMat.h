@@ -8,6 +8,7 @@
 
 #import "OCVSize.h"
 #import "OCVPoint.h"
+#import "OCVRect.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -37,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (float) floatAtRow: (int) row col: (int) col;
 
 - (UIImage*) convertToUIImage;
+
+- (OCVMat*) croppedWithRect: (OCVRect*) rect;
 
 + (void) minMaxLoc: (OCVMat*) src
             minLoc: (OCVPoint*) minLoc
