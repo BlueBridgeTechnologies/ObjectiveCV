@@ -33,4 +33,20 @@
   return &backingRect;
 }
 
+- (int) x {
+  return backingRect.x;
+}
+
+- (int) y {
+  return backingRect.y;
+}
+
+- (int) width {
+  return backingRect.width;
+}
+
+- (int) height {
+  return backingRect.height;
+}
+
 @end

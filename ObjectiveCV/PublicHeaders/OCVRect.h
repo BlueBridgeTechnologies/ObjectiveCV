@@ -22,6 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
         andWidth: (int) width
        andHeight: (int) height;
 
+- (int) x;
+
+- (int) y;
+
+- (int) width;
+
+- (int) height;
+
 @end
 
 NS_ASSUME_NONNULL_END
