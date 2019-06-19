@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ObjectiveCV"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Objective-C wrapper for a small subset of OpenCV."
 
   # This description is used to generate tags and improve search results.
