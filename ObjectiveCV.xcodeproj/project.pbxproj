@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840CAAA522CE16CD00E89AA7 /* OCVClahe+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 840CAAA422CE16CB00E89AA7 /* OCVClahe+Private.h */; };
+		840CAAA622CE16D100E89AA7 /* OCVClahe.h in Headers */ = {isa = PBXBuildFile; fileRef = 840CAAA322CE14BF00E89AA7 /* OCVClahe.h */; };
+		840CAAA822CE17A600E89AA7 /* OCVClahe.mm in Sources */ = {isa = PBXBuildFile; fileRef = 840CAAA722CE17A600E89AA7 /* OCVClahe.mm */; };
 		8415A4B222B3AB260049D6C0 /* OCVRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B122B3AA4B0049D6C0 /* OCVRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8415A4B422B3AC500049D6C0 /* OCVRect+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */; };
 		8415A4B622B3AC6F0049D6C0 /* OCVRect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */; };
@@ -57,6 +60,9 @@
 		442300169270C80C973A9E1A /* libPods-ObjectiveCVTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveCVTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814753A8B997134BEAC2BCD5 /* Pods-ObjectiveCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCV/Pods-ObjectiveCV.debug.xcconfig"; sourceTree = "<group>"; };
 		83ABD81061AE378EC46C4BEB /* Pods-ObjectiveCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCV/Pods-ObjectiveCV.release.xcconfig"; sourceTree = "<group>"; };
+		840CAAA322CE14BF00E89AA7 /* OCVClahe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVClahe.h; sourceTree = "<group>"; };
+		840CAAA422CE16CB00E89AA7 /* OCVClahe+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "OCVClahe+Private.h"; sourceTree = "<group>"; };
+		840CAAA722CE17A600E89AA7 /* OCVClahe.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVClahe.mm; sourceTree = "<group>"; };
 		8415A4B122B3AA4B0049D6C0 /* OCVRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVRect.h; sourceTree = "<group>"; };
 		8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCVRect+Private.h"; sourceTree = "<group>"; };
 		8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVRect.mm; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				84EA4F5B2269C7F800201D20 /* OCVMat.mm */,
 				84EA4F5C2269C7F800201D20 /* OCVNormTypes.mm */,
 				8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */,
+				840CAAA722CE17A600E89AA7 /* OCVClahe.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				84EA4F6A2269C80000201D20 /* OCVMat+Private.h */,
 				84EA4F6B2269C80000201D20 /* OCVScalar+Private.h */,
 				8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */,
+				840CAAA422CE16CB00E89AA7 /* OCVClahe+Private.h */,
 			);
 			path = PrivateHeaders;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				84EA4F7A2269C80600201D20 /* OCVPixelType.h */,
 				84EA4F7B2269C80600201D20 /* OCVScalar.h */,
 				8415A4B122B3AA4B0049D6C0 /* OCVRect.h */,
+				840CAAA322CE14BF00E89AA7 /* OCVClahe.h */,
 			);
 			path = PublicHeaders;
 			sourceTree = "<group>";
@@ -234,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EA4F882269D47E00201D20 /* PrefixHeader.pch in Headers */,
+				840CAAA622CE16D100E89AA7 /* OCVClahe.h in Headers */,
 				84EA4F6C2269C80000201D20 /* OCVPoint+Private.h in Headers */,
 				8415A4B222B3AB260049D6C0 /* OCVRect.h in Headers */,
+				840CAAA522CE16CD00E89AA7 /* OCVClahe+Private.h in Headers */,
 				84EA4F812269C80600201D20 /* OpenCV.h in Headers */,
 				84EA4F7D2269C80600201D20 /* OCVFeatureDetection.h in Headers */,
 				84EA4F7F2269C80600201D20 /* OCVPoint.h in Headers */,
@@ -406,6 +417,7 @@
 				84EA4F652269C7F800201D20 /* OCVMat.mm in Sources */,
 				84EA4F622269C7F800201D20 /* OCVPixelType.mm in Sources */,
 				84EA4F612269C7F800201D20 /* OCVSize.mm in Sources */,
+				840CAAA822CE17A600E89AA7 /* OCVClahe.mm in Sources */,
 				84EA4F602269C7F800201D20 /* OCVFeatureDetection.mm in Sources */,
 				84EA4F5F2269C7F800201D20 /* OCVColorConversionCodes.mm in Sources */,
 				84EA4F642269C7F800201D20 /* OpenCV.mm in Sources */,
