@@ -19,4 +19,8 @@
   return CV_32FC1;
 }
 
++ (int) cv16UC1 {
+  return CV_16UC1;
+}
+
 @end

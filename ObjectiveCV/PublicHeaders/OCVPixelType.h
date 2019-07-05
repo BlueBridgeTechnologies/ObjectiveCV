@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (int) cv32FC1;
 
++ (int) cv16UC1;
+
 @end
 
 NS_ASSUME_NONNULL_END
