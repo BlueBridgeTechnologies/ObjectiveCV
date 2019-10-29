@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		840CAAA522CE16CD00E89AA7 /* OCVClahe+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 840CAAA422CE16CB00E89AA7 /* OCVClahe+Private.h */; };
-		840CAAA622CE16D100E89AA7 /* OCVClahe.h in Headers */ = {isa = PBXBuildFile; fileRef = 840CAAA322CE14BF00E89AA7 /* OCVClahe.h */; };
+		840CAAA622CE16D100E89AA7 /* OCVClahe.h in Headers */ = {isa = PBXBuildFile; fileRef = 840CAAA322CE14BF00E89AA7 /* OCVClahe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		840CAAA822CE17A600E89AA7 /* OCVClahe.mm in Sources */ = {isa = PBXBuildFile; fileRef = 840CAAA722CE17A600E89AA7 /* OCVClahe.mm */; };
 		8415A4B222B3AB260049D6C0 /* OCVRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B122B3AA4B0049D6C0 /* OCVRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8415A4B422B3AC500049D6C0 /* OCVRect+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */; };
