@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		8415A4B222B3AB260049D6C0 /* OCVRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B122B3AA4B0049D6C0 /* OCVRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8415A4B422B3AC500049D6C0 /* OCVRect+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */; };
 		8415A4B622B3AC6F0049D6C0 /* OCVRect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */; };
+		84758BFE236878F100CC60BA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758BFD236878F100CC60BA /* opencv2.framework */; };
+		84758BFF236878F200CC60BA /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84758BFD236878F100CC60BA /* opencv2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84758C022368796C00CC60BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C012368796C00CC60BA /* AVFoundation.framework */; };
+		84758C042368797C00CC60BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C032368797C00CC60BA /* CoreMedia.framework */; };
+		84758C062368798400CC60BA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C052368798400CC60BA /* AssetsLibrary.framework */; platformFilter = ios; };
+		84758C08236879B900CC60BA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C07236879B900CC60BA /* CoreVideo.framework */; };
+		84758C0A236879D000CC60BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C09236879D000CC60BA /* CoreGraphics.framework */; };
+		84758C0C236879DA00CC60BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C0B236879DA00CC60BA /* UIKit.framework */; platformFilter = ios; };
 		84EA4E7A225CB7EF00201D20 /* ObjectiveCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EA4E70225CB7EE00201D20 /* ObjectiveCV.framework */; };
 		84EA4E7F225CB7EF00201D20 /* ObjectiveCVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4E7E225CB7EF00201D20 /* ObjectiveCVTests.m */; };
 		84EA4F5D2269C7F800201D20 /* OCVDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84EA4F532269C7F800201D20 /* OCVDrawing.mm */; };
@@ -53,6 +61,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84758C00236878F200CC60BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84758BFF236878F200CC60BA /* opencv2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		840CAAA322CE14BF00E89AA7 /* OCVClahe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVClahe.h; sourceTree = "<group>"; };
 		840CAAA422CE16CB00E89AA7 /* OCVClahe+Private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "OCVClahe+Private.h"; sourceTree = "<group>"; };
@@ -60,6 +82,13 @@
 		8415A4B122B3AA4B0049D6C0 /* OCVRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVRect.h; sourceTree = "<group>"; };
 		8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCVRect+Private.h"; sourceTree = "<group>"; };
 		8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVRect.mm; sourceTree = "<group>"; };
+		84758BFD236878F100CC60BA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		84758C012368796C00CC60BA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		84758C032368797C00CC60BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		84758C052368798400CC60BA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		84758C07236879B900CC60BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		84758C09236879D000CC60BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		84758C0B236879DA00CC60BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84EA4E70225CB7EE00201D20 /* ObjectiveCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EA4E74225CB7EE00201D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EA4E79225CB7EF00201D20 /* ObjectiveCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +127,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84758C0A236879D000CC60BA /* CoreGraphics.framework in Frameworks */,
+				84758C042368797C00CC60BA /* CoreMedia.framework in Frameworks */,
+				84758C022368796C00CC60BA /* AVFoundation.framework in Frameworks */,
+				84758BFE236878F100CC60BA /* opencv2.framework in Frameworks */,
+				84758C062368798400CC60BA /* AssetsLibrary.framework in Frameworks */,
+				84758C0C236879DA00CC60BA /* UIKit.framework in Frameworks */,
+				84758C08236879B900CC60BA /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,12 +148,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84758BFC236878F100CC60BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84758C0B236879DA00CC60BA /* UIKit.framework */,
+				84758C09236879D000CC60BA /* CoreGraphics.framework */,
+				84758C07236879B900CC60BA /* CoreVideo.framework */,
+				84758C052368798400CC60BA /* AssetsLibrary.framework */,
+				84758C032368797C00CC60BA /* CoreMedia.framework */,
+				84758C012368796C00CC60BA /* AVFoundation.framework */,
+				84758BFD236878F100CC60BA /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84EA4E66225CB7EE00201D20 = {
 			isa = PBXGroup;
 			children = (
 				84EA4E72225CB7EE00201D20 /* ObjectiveCV */,
 				84EA4E7D225CB7EF00201D20 /* ObjectiveCVTests */,
 				84EA4E71225CB7EE00201D20 /* Products */,
+				84758BFC236878F100CC60BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +295,7 @@
 				84EA4E6C225CB7EE00201D20 /* Sources */,
 				84EA4E6D225CB7EE00201D20 /* Frameworks */,
 				84EA4E6E225CB7EE00201D20 /* Resources */,
+				84758C00236878F200CC60BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -487,12 +539,16 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EDK9ZH3WPY;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveCV/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -503,6 +559,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bluebridgetech.ObjectiveCV;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -515,12 +573,16 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EDK9ZH3WPY;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveCV/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -531,6 +593,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bluebridgetech.ObjectiveCV;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
