@@ -25,3 +25,4 @@ FOUNDATION_EXPORT const unsigned char ObjectiveCVVersionString[];
 #import <ObjectiveCV/OCVColorConversionCodes.h>
 #import <ObjectiveCV/OCVPixelType.h>
 #import <ObjectiveCV/OCVNormTypes.h>
+#import <ObjectiveCV/OCVClahe.h>

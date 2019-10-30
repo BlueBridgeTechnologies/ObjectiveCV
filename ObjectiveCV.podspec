@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ObjectiveCV"
-  s.version      = "0.0.5"
+  s.version      = "0.0.7"
   s.summary      = "Objective-C wrapper for a small subset of OpenCV."
 
   # This description is used to generate tags and improve search results.
@@ -25,10 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-
         A simple Objective-C wrapper for a small subset of OpenCV.
         This was built for a specific application, as such it only wrapped functions/objects required for that application.
-
                    DESC
 
   s.homepage     = "https://github.com/BlueBridgeTechnologies/ObjectiveCV"
