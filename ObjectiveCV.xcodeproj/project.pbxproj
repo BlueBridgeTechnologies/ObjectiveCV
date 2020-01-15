@@ -14,7 +14,6 @@
 		8415A4B422B3AC500049D6C0 /* OCVRect+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8415A4B322B3AC180049D6C0 /* OCVRect+Private.h */; };
 		8415A4B622B3AC6F0049D6C0 /* OCVRect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8415A4B522B3AC6F0049D6C0 /* OCVRect.mm */; };
 		84758BFE236878F100CC60BA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758BFD236878F100CC60BA /* opencv2.framework */; };
-		84758BFF236878F200CC60BA /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84758BFD236878F100CC60BA /* opencv2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84758C022368796C00CC60BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C012368796C00CC60BA /* AVFoundation.framework */; };
 		84758C042368797C00CC60BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C032368797C00CC60BA /* CoreMedia.framework */; };
 		84758C062368798400CC60BA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84758C052368798400CC60BA /* AssetsLibrary.framework */; platformFilter = ios; };
@@ -60,20 +59,6 @@
 			remoteInfo = ObjectiveCV;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		84758C00236878F200CC60BA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				84758BFF236878F200CC60BA /* opencv2.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		840CAAA322CE14BF00E89AA7 /* OCVClahe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVClahe.h; sourceTree = "<group>"; };
@@ -295,7 +280,6 @@
 				84EA4E6C225CB7EE00201D20 /* Sources */,
 				84EA4E6D225CB7EE00201D20 /* Frameworks */,
 				84EA4E6E225CB7EE00201D20 /* Resources */,
-				84758C00236878F200CC60BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -552,6 +536,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveCV/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,8 +547,9 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,6 +572,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveCV/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +583,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
